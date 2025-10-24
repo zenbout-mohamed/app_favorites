@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f14]/80 shadow-lg border-b border-gray-800">
         <section>
-            <a href="" class ="">
-                <div>
-                    <span>
-                        
+            <a href="index.html" class="container mx-auto flex items-center justify-between px-6 py-4">
+                <div
+                    class="w-10 h-10 rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
+                    <span class="font-bold text-white text-lg">
+                        A
                     </span>
                 </div>
+                <div>
+                    <p class="font-semibold text-lg text-white">Mes Applications favorites</p>
+                    <p class="text-xs text-teal-400 tracking-wide">Découvre et Télécharges</p>
+                </div>
             </a>
+            <nav>
+                <ul class="flex gap-8 flex items-center text-teal-400 font-medium">
+                    <li><a href="index.html" clas="hover:text-teal-300">Accueil</a></li>
+                    <li><a href="snapchat.html" clas="hover:text-teal-300">Snapchat</a></li>
+                    <li><a href="instagram.html" clas="hover:text-teal-300">Instagram</a></li>
+                    <li><a href="whatsapp.html" clas="text-green-400 font-semibold">WhatsApp</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="container mx-auto px-6 py-12 space-y-10">
+        <section class="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-4xl font-extrabold text-green-400 mb-4"></h2>
+                <p class="text-gray-300 mb-4">Fondée en 2009, WhatsApp est devenue la messagerie instantanée la plus
+                    utilisée dans le monde.</p>
+                <p class="text-gray-400 mb-6">Gratuite, rapide et chiffré, elle permet d'envoyer des messages, photos,
+                    vidéos et d'effectuer des appels vocaux ou vidéos qualitatifs.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=800" alt="WhatsApp interface"
+                class="rounded-lg shadow-lg">
         </section>
 
-       
+        <section class="bg-[#071022] p-6 rounded-lg">
+            <p class="text-2xl font-semibold text-green-400 mb-4">Le spoints fort de WhatsApp :</p>
+            <ul class="list-disc pl-6 space-y-3 text-gray-300">
+                <li>Communication simple et rapide.</li>
+                <li>Chiffrement de bout en bout pour plus de sécurité.</li>
+                <li>Appels audio et vidéo gratuits.</li>
+                <li>Compatibilité multi-appareils.</li>
+            </ul>
+        </section>
 
-
-
-        <nav>
-
-        </nav>
-    </header>
+        <section class="">
+            <p class="text-2xl font-semibold text-green-400 mb-4">Vidéo de présentation :</p>
+            <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                <iframe class="w-full h-full rounded-lg shadow-lg" src="https://www.youtube.com/embed/75k4DtQSPv8"
+                    title="Présentation WhatsApp" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="border-t border-gray-800 mt-12 text-sm text-gray-500 p-6 text-center">
+        © 2025 - Mes Applications Favorites
+    </footer>
 </body>
+
 </html>
