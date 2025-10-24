@@ -1,102 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App - Favorite Page D'accueil</title>
-    <script src ="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applications Favorites</title>
+  <meta name="description" content="Découvrez nos applications mobiles préférées : Snapchat, Instagram et WhatsApp.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type ="text/css" href="./css/style.css">
 </head>
-<body class ="bg-[#0b0f14] text-gray-100 font-sans">
-    <header class ="relative overflow-hidden border-b border-gray-800 shadow-lg">
-        <div class ="absolute inset-0 bg-gradient-to-r from-teal-500 via-teal-500 to-teal-800 animate-gradient"></div>
-        <section class ="relative container mx-auto flex items-center justify-between px-6 py-4 bg-[#0b0f14]/95 backdrop-blur-sm">
-            <a href="index.html" class ="flex items-center gap-3">
-                <div class ="w-10 h-10 rounded-full  bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center shadow-md">
-                    <span class ="font-bold text-white text-lg"> A</span>
-                </div>
-                <div>
-                    <h1 class ="font-semibold text-lg text-white">Mes applications favorites</h1>
-                    <p class ="text-xs text-teal-400 tracking-wide">Séléction et présentation</p>
-                </div>
-            </a>
 
-            <nav>
-                <ul class ="flex gap-8 items-center text-teal-400 font-medium">
-                    <li><a href="index.html" class ="hover:text-teal-300">Accueil</a></li>
-                    <li><a href="snapchat.html" class ="hover:text-teal-300">Snapchat</a></li>
-                    <li><a href="instagram.html" class ="hover:text-teal-300">Instagram</a></li>
-                    <li><a href="whatsapp.html" class ="hover:text-teal-300">WhatsApp</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
+<body class="bg-[#0b0f14] text-gray-100 font-sans">
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f14]/80 shadow-lg border-b border-gray-800">
+    <section class="container mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center shadow-md hover:scale-110 transition-transform duration-300">
+          <span class="font-bold text-white text-lg">A</span>
+        </div>
+        <div>
+          <h1 class="font-semibold text-lg text-white">Mes Applications Favorites</h1>
+          <p class="text-xs text-teal-400 tracking-wide">Découvre et télécharge</p>
+        </div>
+      </a>
+      <nav>
+        <ul class="flex gap-8 items-center text-teal-400 font-medium">
+          <li><a href="index.html" class="hover:text-teal-300">Accueil</a></li>
+          <li><a href="snapchat.html" class="hover:text-teal-300">Snapchat</a></li>
+          <li><a href="instagram.html" class="hover:text-teal-300">Instagram</a></li>
+          <li><a href="whatsapp.html" class="hover:text-teal-300">WhatsApp</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main class="container mx-auto p-6 py-12 space-y-12">
+    <section class="grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl font-extrabold text-teal-300 mb-4">Explore les meilleures apps du moment</h2>
+        <p class="text-gray-300 mb-6">Ces applications sont incontournables pour communiquer, partager, et créer du contenu avec style.</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a href="snapchat.html" class="px-4 py-2 bg-yellow-400 text-black rounded font-semibold hover:bg-yellow-300">Snapchat</a>
+        <a href="instagram.html" class="px-4 py-2 bg-pink-500 text-white rounded font-semibold hover:bg-pink-400">Instagram</a>
+        <a href="whatsapp.html" class="px-4 py-2 bg-green-500 text-white rounded font-semibold hover:bg-green-400">WhatsApp</a>
+      </div>
+    </section>
 
-    <main class ="container mx-auto p-6 py-12">
-        <section class ="grid lg:grid-cols-2 gap-10 items-center ">
-            <div>
-                <h2 class ="text-4xl font-extrabold font-semibold">Découvres, télécharge et test nos applications favorites</h2>
-                <p class ="text-gray-300 mb-6">Chaque application a sa personnalité , regarde les captures ,lis la description et regardes depuis les stores.</p>
-            </div>
-            <div class ="flex flex-wrap gap-3">
-                <a href ="snapchat.html" class ="px-4 py-2 bg-teal-600 text-black rounded font-semibold hover:bg-teal-500">Snapchat - Détails</a>
-                <a href ="instagram.html" class ="px-4 py-2 bg-pink-500 text-white rounded font-semibold hover:bg-pink-400">Instagram - Détails</a>
-                <a href ="whatsapp.html" class ="px-4 py-2 bg-gray-200 text-black rounded font-semibold hover:bg-gray-100">WhatsApp - Détails</a>
-            </div>
-        </section>
+    <section class="bg-[#071022] p-6 rounded-lg">
+      <h3 class="text-2xl font-semibold text-teal-300 mb-4">Nos coups de cœur</h3>
+      <ul class="space-y-4 text-gray-300">
+        <li class="flex items-center gap-3">
+          <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=100" alt="Logo Snapchat" class="w-12 h-12 rounded">
+          <div>
+            <p class="font-semibold text-yellow-400">Snapchat</p>
+            <p class="text-sm text-gray-400">Partage rapide et stories éphémères.</p>
+          </div>
+        </li>
+        <li class="flex items-center gap-3">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=100" alt="Logo Instagram" class="w-12 h-12 rounded">
+          <div>
+            <p class="font-semibold text-pink-400">Instagram</p>
+            <p class="text-sm text-gray-400">Photos, réels et créativité infinie.</p>
+          </div>
+        </li>
+        <li class="flex items-center gap-3">
+          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=100" alt="Logo WhatsApp" class="w-12 h-12 rounded">
+          <div>
+            <p class="font-semibold text-green-400">WhatsApp</p>
+            <p class="text-sm text-gray-400">Messagerie simple et rapide.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-        <section class ="bg-[#071022] p-6 rounded-lg card">
-            <p class ="text-xl font-semibold text-teal-300 mb-3">Nos coups de coeur</p>
-            <ul class ="space-y-3 text-gray-300">
-                <li class ="flex items-start gap-3">
-                    <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="" class ="w-12 h-12 rounded">
-                    <div>
-                        <p class ="font-semibold">Snapchat</p>
-                        <div class ="text-sm text-gray-400">Streaming musical et playlists intelligentes.</div>
-                    </div>
-                </li>
-                <li class ="flex items-center gap-3">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="" class ="w-12 h-12 rounded">
-                    <div>
-                        <p class ="font-semibold">Instagram</p>
-                        <div class ="text-sm text-gray-400">Partage photo et stories créatives.</div>
-                    </div>
-                </li>
-                <li class ="flex items-center gap-3">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="" class ="w-12 h-12 rounded">
-                    <div>
-                        <p class ="font-semibold">WhatsApp</p>
-                        <div class ="text-sm text-gray-400">Chattez avec plus facilité avec WhatsApp.</div>
-                    </div>
-                </li>
-            </ul>
-        </section>
+    <section>
+      <h3 class="text-2xl font-semibold text-teal-300 mb-4">Présentation en vidéo</h3>
+      <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+        <iframe class="w-full h-full rounded-lg shadow-lg"
+          src="https://www.youtube.com/embed/09R8_2nJtjg"
+          title="Présentation des applications"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
 
-        <section class ="mt-12 grid md:grid-cols-3 gap-6">
-
-            <article class ="bg-[#071022] p-6 rounded-lg shadow hover:scale-105 transition-transform">
-                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="Snapchat.lien" class ="w-20 mx-auto mb-4">
-                <p class ="font-semibold ext-xl text-center text-teal-300">Snapchat</p>
-                <p class =" text-gray-400 text-sm mt-2 text-center">Ecoutes les stories de chacun(e)s et mets en place des commentaires.</p>
-                <div class ="mt-4 flex justify-center gap-3">
-                    <a href="spotify.html" class ="px-3 py-2 bg-teal-600 text-black rounded font-semibold">Voir</a>
-                </div>
-            </article>
-
-            <article class ="bg-[#071022] p-6 rounded-lg shadow hover:scale-105 transition-transform">
-                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="" class ="w-20 mx-auto mb-4">
-                <p class ="text-xl font-semibold text-gray-200 text-center">WhastApp</p>
-                <p class ="text-gray-400 text-sm mt-2 text-center">Dialogue, partage des photos et vidéos avec tes amis.</p>
-                <div class ="mt-4 flex justify-center gap-3">
-                    <a href="" class ="px-3 py-2 bg-gray-200 text-black rounded font-semibold">Voir</a>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <footer class ="border-t border-gray-800 mt-12 text-sm text-gray-500 p-6 text-center ">
-        &copy; 2025 - Applications Favorites 
-    </footer>
-    
+  <footer class="border-t border-gray-800 mt-12 text-sm text-gray-500 p-6 text-center">
+    © 2025 - Mes Applications Favorites
+  </footer>
 </body>
 </html>
