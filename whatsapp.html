@@ -9,29 +9,41 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="bg-[#0b0f14] text-gray-100 font-sans">
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f14]/80 shadow-lg border-b border-gray-800">
-        <section class="container mx-auto flex items-center justify-between px-6 py-4">
-            <a href="index.html" class="flex items-center gap-3">
-                <div
-                    class="w-10 h-10 rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center shadow-md hover:scale-105 transition-transform duration-200">
-                    <span class="font-bold text-white text-lg">W</span>
-                </div>
-                <div>
-                    <h1 class="font-semibold text-lg text-white">Mes Applications Favorites</h1>
-                    <p class="text-xs text-teal-400 tracking-wide">Découvre et télécharge</p>
-                </div>
-            </a>
+<header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f14]/80 shadow-lg border-b border-gray-800">
+    <section class="container mx-auto flex items-center justify-between px-6 py-4">
+        <a href="index.html" class="flex items-center gap-3">
+            <div
+                class="w-10 h-10 rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
+                <span class="font-bold text-white text-lg">W</span>
+            </div>
+            <div>
+                <p class="font-semibold text-lg text-white">Mes Applications favorites</p>
+                <p class="text-xs text-teal-400 tracking-wide">Découvre et Télécharge</p>
+            </div>
+        </a>
+        <button id="menu-toggle" class="text-teal-400 md:hidden focus:outline-none focus:ring-2 focus:ring-teal-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <nav id="menu" class="hidden md:flex flex-col md:flex-row md:items-center gap-6 text-teal-400 font-medium">
+            <a href="index.html" class="hover:text-teal-300">Accueil</a>
+            <a href="snapchat.html" class="hover:text-teal-300">Snapchat</a>
+            <a href="instagram.html" class="hover:text-teal-300">Instagram</a>
+            <a href="whatsapp.html" class="text-green-400 font-semibold">WhatsApp</a>
+        </nav>
+    </section>
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+            menu.classList.toggle("flex");
+        });
+    </script>
+</header>
 
-            <nav>
-                <ul class="flex gap-8 items-center text-teal-400 font-medium">
-                    <li><a href="index.html" class="hover:text-teal-300">Accueil</a></li>
-                    <li><a href="snapchat.html" class="hover:text-teal-300">Snapchat</a></li>
-                    <li><a href="instagram.html" class="hover:text-teal-300">Instagram</a></li>
-                    <li><a href="whatsapp.html" class="hover:text-teal-300">WhatsApp</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
 
     <main class="container mx-auto px-6 py-12 space-y-10">
         <section class="grid md:grid-cols-2 gap-10 items-center">
@@ -56,18 +68,15 @@
             </ul>
         </section>
 
-        <section>
-            <p class="text-2xl font-semibold text-green-400 mb-4">Vidéo de présentation :</p>
-            <div class="aspect-video rounded-lg overflow-hidden shadow-lg">
-                <iframe
-                    src="https://www.youtube.com/embed/75k4DtQSPv8"
-                    title="Présentation"
-                    class="w-full h-full"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
+        <section class="bg-[#071022] p-6 rounded-lg mt-12">
+            <h2 class="text-2xl font-semibold text-green-400 mb-4">Vidéo de présentation :</h2>
+            <video class="w-full rounded-lg shadow-lg border border-gray-700" autoplay muted loop controls>
+                <source src="./videos/whatsapp.mp4" type="video/mp4">
+                Votre navigateur ne prend pas en charge la lecture vidéo.
+            </video>
+            <p class="text-gray-400 mt-3 text-sm text-center">
+                Vidéo libre de droits - Source : Pexels
+            </p>
         </section>
     </main>
     <footer class="border-t border-gray-800 mt-12 text-sm text-gray-500 p-6 text-center">
